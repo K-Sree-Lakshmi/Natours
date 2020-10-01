@@ -1,0 +1,48 @@
+
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+$color-grey-dark: #777;
+$color-white: #fff;
+$color-black: #000;
+
+//GRID
+$screen-width :114rem;
+$vertical-gutter: 8rem;
+$horizontal-gutter: 6rem;
+
+
+// .row{
+//     max-width: $screen-width;
+//     // background-color: #eee;
+//     margin: 0 auto;
+//     &:not(:last-child){
+//         margin-bottom: $vertical-gutter;
+//     }
+//     @include clearfix;
+//     [class^="col-"]{
+//         background-color: orangered;
+//         float: left;
+//         &:not(:last-child){
+//             margin-right: $horizontal-gutter;
+//         }
+//     }
+//     .col-1-of-2{
+//         width: calc((100% - #{$horizontal-gutter})/2);
+//     }
+//     .col-1-of-3{
+//         width: calc((100% - 2*#{$horizontal-gutter})/3);
+//     }
+//     .col-2-of-3{
+//         width: calc((((100% - 2 * #{$horizontal-gutter}) / 3)*2) + #{$horizontal-gutter});
+//     }
+//     .col-1-of-4{
+//         width: calc((100% - 3*#{$horizontal-gutter})/4);
+//     }
+//     .col-2-of-4{
+//         width: calc(((100% - 3*#{$horizontal-gutter})/4) * 2 + #{$horizontal-gutter});
+//     }
+//     .col-3-of-4{
+//         width: calc(((100% - 3*#{$horizontal-gutter})/4) * 3 + (2 * #{$horizontal-gutter}));
+//     }
+// }
