@@ -5,7 +5,15 @@
 
     &:not(:last-child){
         margin-bottom: $vertical-gutter ;
+        @include respond(tab-port) {
+            margin-bottom: $vertical-gutter-small;
+          }
     }
+
+    @include respond(tab-port) {
+        max-width: 50rem;
+        padding: 0 3rem;
+      }
 
     // similar to .row::after
     @include clearfix;
@@ -15,7 +23,16 @@
         float: left;
         &:not(:last-child){
             margin-right: $horizontal-gutter;
+            @include respond(tab-port) {
+                margin-right:0;
+            margin-bottom: $vertical-gutter-small;
+
+              }
         }
+
+        @include respond(tab-port) {
+            width: 100% !important;
+          }
     }
     .col-1-of-2{
         width: calc((100% - #{$horizontal-gutter})/2);
