@@ -13,9 +13,17 @@
       border-radius: 10rem;
       transition: all 0.2s;
       position: relative;
-
       border: none;
       cursor: pointer;
+    }
+
+    @include respond(tab-port){
+      &,
+      &:link,
+      &:visited {
+        padding: 1rem 3rem;
+        margin-top: -1rem;
+      }
     }
   
     &:hover {

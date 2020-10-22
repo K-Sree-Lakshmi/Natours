@@ -43,10 +43,38 @@
     vertical-align: middle;
     padding: 0 5rem;
   }
+
+
   &__img {
     width: 100%;
     display: block;
   }
+
+
+  @include respond(tab-port){
+    &__img {
+      display: inline;
+    }
+  }
+  @include respond(phone){
+    &__component {
+      display: block;
+      width: 100%;
+    }
+    &__left {
+      width: 100%;
+    }
+    &__right {
+      width: 0;
+      display: inline-table;
+      padding: 5rem 10rem;
+    }
+    &__img {
+      width: 50%;
+      float: left;
+    }
+  }
+
 
   &__text {
     font-size: 1.4rem;
@@ -90,3 +118,5 @@
     }
   }
 }
+
+
